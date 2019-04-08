@@ -1,0 +1,64 @@
+#info_img:hover{
+    color:rgb(0, 151, 33);
+}
+
+#info_img1:hover{
+    color:rgb(0, 151, 33);
+}
+
+#info_img2:hover{
+    color:rgb(0, 151, 33);
+}
+
+#info_img3:hover{
+    color:rgb(0, 151, 33);
+}
+
+#btn-info-titulo:hover{
+    color:rgb(0, 151, 33);
+}
+
+#btn-info-titulo1:hover{
+    color:rgb(0, 151, 33);
+}
+
+#btn-info-titulo2:hover{
+    color:rgb(0, 151, 33);
+}
+
+#btn-info-titulo3:hover{
+    color:rgb(0, 151, 33);
+}
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+.info_txt{
+
+    transform: scaleY(0);
+    transition: all 0.8s;
+    height: 0px;
+}
+
+.info_txt1{
+    transform: scaleY(0);
+    transition: all 0.8s;
+    height: 0px;
+}
+
+.info_txt2{
+    transform: scaleY(0);
+    transition: all 0.8s;
+    height: 0px;
+}
+
+.info_txt3{
+    transform: scaleY(0);
+    transition: all 0.8s;
+    height: 0px;
+}
+
+.mostrar_info{
+    transform: scale(1);
+    height: 50%;
+}

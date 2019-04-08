@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+	box-sizing: border-box;
+}
+html{
+    background: rgb(15, 15, 15);
+}
+img{
+	max-width: 100%;
+	}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+    font-weight:bold;
+    background-image: linear-gradient(rgb(60, 60, 60),rgb(30, 30, 30),rgb(15,15,15));
+    max-height: 2000px;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'PT Sans Caption', sans-serif;
+letter-spacing: 2px;
+}
+
+a{
+    color:white;
+}
+
+.main_grid{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:repeat(4,auto);
+    
+    grid-template-areas:"header header"
+                        "section section"
+                        "about about"       
+                        "footer footer"   ;
+    text-align: center;
+    color:white;
+}
+/*-----------------------------------------------*/
+/*-------------------Header-----------------------*/
+/*-----------------------------------------------*/
+
+.main_grid .header{
+    grid-area: header;
+}
+
+.header_grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-row-gap: 4%;
+    grid-template-areas: "titulo titulo"
+                        "foto contacto"
+                        "red red";
+    overflow: hidden;
+}
+
+.header_grid .titulo{
+    grid-area: titulo;
+    border-bottom: solid 2px rgb(0, 151, 33);
+    transition: all 0.8s;
+}
+
+.header_grid .div_img{
+    grid-area: foto;
+    overflow: hidden;
+    max-height: 200px;
+    min-width: 100px;
+    height: 160px;
+}
+
+.foto{
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.circulo{
+    border-style: solid;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100%;
+    max-width: 150px;
+    max-height: 200px;
+    border-color:rgb(0, 151, 33);
+}
+
+.hr_linea{
+    display:none;
+}
+
+.header_grid .contacto{
+    grid-area: contacto;
+    text-align: left;
+    padding: 10px;
+
+}
+
+.header_grid .red_social{
+    grid-area: red;
+    margin-bottom: 16%;
+    border-top:solid 2px rgb(0, 151, 33);
+}
+
+.contenedor_redes{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    padding: 5px 20px;
+    
+}
+
+.contenedor_redes .red_ico{
+    border-style: solid;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px 10px;
+}
+
+.red_ico:hover{
+    color:rgb(0, 151, 33);
+}
+
+.contenedor_redes .redf_ico{
+    border-style: solid;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px 15px;
+}
+
+.redf_ico:hover{
+    color:rgb(0, 151, 33);
+}
+
+a:hover{
+    color:rgb(0, 151, 33);
+}
+/*-----------------------------------------------*/
+/*-------------------section----------------------*/
+/*-----------------------------------------------*/
+
+.main_grid .section{
+    grid-area: seccion;
+}
+
+.grid_seccion{
+    border-top:2px solid rgb(0, 151, 33);
+    border-bottom:2px solid rgb(0, 151, 33);
+    transition: all 0.8s;
+}
+
+.info_columna{
+    padding: 10px 20px; 
+    transition: all 0.5s;
+}
+
+.centro{
+    font-size: 100px;
+}
+
+/*-------------------------------------------------------*/
+/*------------------------Footer-------------------------*/
+/*-------------------------------------------------------*/
+.sobre_mi{
+    grid-area: about;
+    padding: 20px 40px;
+}
+/*-------------------------------------------------------*/
+/*------------------------Footer-------------------------*/
+/*-------------------------------------------------------*/
+footer{
+    grid-area: footer;
+}
+.grid_footer{
+    color:white;
+    border-top:solid 3px rgb(0, 151, 33);
+    padding: 10px 20px;
+}

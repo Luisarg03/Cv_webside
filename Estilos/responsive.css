@@ -1,0 +1,91 @@
+@media(min-width:500px){
+
+    .header_grid{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: "titulo titulo"
+                            "foto contacto"
+                            "foto red";
+        grid-row-gap: 0;
+    }
+
+    .header_grid .contacto{
+        text-align: center;
+        border-left: solid 3px rgb(0, 151, 33);
+    }
+
+    .header_grid .red_social{
+        border-left: solid 3px rgb(0, 151, 33);
+        margin-bottom: 0;
+    }
+
+    .contenedor_redes{
+        margin-bottom: 5%;
+    }
+
+    .header_grid .div_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: none;
+        height: 100%;
+    }
+
+    .circulo{
+        border-style: solid;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 60%;
+        width: 100%;
+        border-color: rgb(0, 151, 33);
+        margin-left: 10%;
+    }
+
+    .hr_linea{
+        display: inline-flex;
+        border-bottom:solid 3px rgb(0, 151, 33);
+        width: 65%;
+    }
+
+
+}
+
+
+@media(min-width:700px){
+    .header_grid{
+        padding: 10px 20px;
+        margin: auto;
+        border-top:solid 3px rgb(0, 151, 33);
+        border-bottom: solid 3px rgb(0, 151, 33);
+    }
+
+    .header_grid .titulo{
+        border-style: solid;
+        border-width: 3px;
+        border-top:none;
+        border-color:rgb(0, 151, 33);
+        width: 450px;
+        margin:auto;
+        padding: 5px 10px;
+    }
+
+    .contacto h5{
+        font-size: 18px;
+    }
+
+    .grid_seccion{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        padding: 10px 20px;
+        border:none;
+        width: 94%;
+        margin:auto;
+    }
+
+    .grid_seccion .info_columna{
+        border-style: solid;
+        border-color:rgb(0, 151, 33);
+    }
+
+}
